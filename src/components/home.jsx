@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Tabs, Tab, Row, Col, Nav } from "react-bootstrap";
+//import { ImageBackground } from "react-native";
 import Challenges from "./challenges.jsx";
 import SignUp from "./SignUp.jsx";
 import SignIn from "./SignIn.jsx";
+import backImg from "./imgs/fire.jpg";
 
 class Home extends Component {
   state = {};
@@ -18,7 +20,9 @@ class Home extends Component {
     return (
       <div>
         <Tabs defaultActiveKey="home">
-          <Tab eventKey="home" title="Home"></Tab>
+          <Tab eventKey="home" title="Home">
+            {/* ?<ImageBackground source={{ uri: backImg }}></ImageBackground> */}
+          </Tab>
           {/* Displays the sign in and sign up */}
           <Tab eventKey="profile" title="Profile">
             <Tab.Container id="sign" defaultActiveKey="signIn">

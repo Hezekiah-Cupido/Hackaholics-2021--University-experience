@@ -9,8 +9,10 @@ function user(username,password,university,dOB,major,profilePic){
 
 }
 
-function challenge(Challenge){
+function challenge(challenge, points){
     this.challenge = challenge;
+    this.points = points;
+
 }
 
 
