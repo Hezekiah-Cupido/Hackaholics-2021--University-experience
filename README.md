@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Hackathon May 2021
+- Statement
+In the wake of the COVID-19 pandemic, remote learning has become part and 
+parcel of the university experience. This has led to new students missing out on 
+the typical university experience. Gone are the days of sitting on the Jammie 
+steps and chatting with your friends, messaging someone you met once for help 
+with homework and creating long-lasting friendships with people you met during 
+o-week. Your job is to facilitate the "university experience 2.0". Create a way for 
+students to take back their right to have an all-encompassing university 
+experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Our Solution:
+We all want to enjoy the best years of our lives at University but unfortunately Coronavirus has gotten in the way. Circumstances have made it difficult to meet people and find out just exactly what experiences one ought to have whilst at University. We have made a platform that enables students from the same university to post experiences they have had and recommend every else has whilst they are at university. Students are then given a dashboard of tiles of the top experiences of their fellow students.
 
-## Available Scripts
+For instance a student at the University of Cape Town could feel that climbing Lion’s Head, partying on Long-Street, watching a recital at the Music School or going to the V&A Waterfront are all experiences a UCT student might enjoy.
 
-In the project directory, you can run:
+On our platform each of these experiences will appear as a card. If a student partakes in one of the experiences, they can tick-it-off their University Bucket List and earn points. The more points you have, the more of University you have experienced.
 
-### `npm start`
+You also have the ability to see who else has partaken in a particular experience
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If a student has a unique experience themselves, they can recommend it to the wider university community sing the platform. If it is popular, it will appear on more often on other students dashboards. 

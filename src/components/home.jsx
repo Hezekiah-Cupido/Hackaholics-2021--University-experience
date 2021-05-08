@@ -1,14 +1,24 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { Tabs, Tab, Row, Col, Nav } from "react-bootstrap";
+import { Tabs, Tab, Row, Col, Nav, Card } from "react-bootstrap";
 //import { ImageBackground } from "react-native";
 import Challenges from "./challenges.jsx";
 import SignUp from "./SignUp.jsx";
 import SignIn from "./SignIn.jsx";
-import backImg from "./imgs/fire.jpg";
+import Profile from "./profile.jsx";
+import { totpoints } from "./challenges.jsx";
+//import points from "./profile.jsx";
 
 class Home extends Component {
-  state = {};
+  state = {
+    points: 0,
+  };
+
+  //   styles = (theme: Theme) => createStyles({
+  //     card: {
+  //       height: "50vh"
+  //     }
+  //   });
 
   style = {
     display: "flex",
@@ -16,13 +26,47 @@ class Home extends Component {
     align: "center",
   };
 
+  pointsCallBack = (points) => {
+    this.setState({ points: points });
+  };
+
   render() {
     return (
       <div>
-        <Tabs defaultActiveKey="home">
-          <Tab eventKey="home" title="Home">
-            {/* ?<ImageBackground source={{ uri: backImg }}></ImageBackground> */}
-          </Tab>
+        <Row>
+          <Col>
+            <img
+              width="1710rem"
+              height="150rem"
+              src="https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png"
+              alt=""
+            ></img>
+          </Col>
+          <Col>
+            <div style={{ display: "flex", justifyContent: "right" }}>
+              <Card style={{ width: "10rem", height: "10rem" }}>
+                <Card.Img
+                  variant="top"
+                  width="70rem"
+                  height="80rem"
+                  src={
+                    "http://img3.wikia.nocookie.net/__cb20140618003853/simpsonstappedout/images/c/cd/Spiderpig-the-simpsons-movie-1343495-473-306.jpg"
+                  }
+                />
+                <Card.Body>
+                  <Card.Title style={{ size: "10" }}>
+                    <h6>Harry Trotter</h6>
+                  </Card.Title>
+                  <Card.Subtitle style={{ size: "10" }}>
+                    Points:120
+                  </Card.Subtitle>
+                  <Card.Text style={{ size: "10" }}>UCT</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+        </Row>
+        <Tabs defaultActiveKey="tasks">
           {/* Displays the sign in and sign up */}
           <Tab eventKey="profile" title="Profile">
             <Tab.Container id="sign" defaultActiveKey="signIn">
@@ -66,10 +110,8 @@ class Home extends Component {
           </Tab>
           {/* Displays the tasks */}
           <Tab eventKey="tasks" title="Tasks">
-            <Challenges />
+            <Challenges parentCallback={this.pointsCallBack} />
           </Tab>
-          {/*  */}
-          <Tab eventKey="socials" title="Socials"></Tab>
         </Tabs>
       </div>
     );
